@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b499d9, #d7caef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 700px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    overflow: hidden;
+}
+
+.login-left, .login-right {
+    flex: 1;
+    padding: 40px 30px;
+}
+
+.login-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-left h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.social-icons span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #222;
+    user-select: none;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #666;
+}
+
+form input::placeholder {
+    color: #bbb;
+}
+
+.login-right {
+    background-color: #5200d9;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 60px;
+    position: relative;
+    clip-path: ellipse(100% 100% at 0% 50%);
+}
+
+.login-right h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.login-right p {
+    font-size: 12px;
+    width: 80%;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.login-right button {
+    padding: 8px 25px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-right button:hover {
+    background-color: white;
+    color: #5200d9;
+}

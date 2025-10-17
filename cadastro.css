@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b499d9, #d7caef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 700px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    overflow: hidden;
+}
+
+.cadastro-left, .cadastro-right {
+    flex: 1;
+    padding: 40px 30px;
+}
+
+.cadastro-left {
+    background-color: #5200d9;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    position: relative;
+    clip-path: ellipse(90% 100% at 100% 50%);
+}
+
+.cadastro-left h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cadastro-left p {
+    font-size: 12px;
+    width: 80%;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.btn-voltar {
+    padding: 8px 25px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: white;
+    color: #5200d9;
+}
+
+.cadastro-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cadastro-right input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #666;
+}
+
+.cadastro-right input::placeholder {
+    color: #bbb;
+}
+
+.btn-cadastrar {
+    align-self: flex-end;
+    background-color: #5200d9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: #3a00a9;
+}
